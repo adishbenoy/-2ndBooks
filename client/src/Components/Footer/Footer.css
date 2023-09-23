@@ -1,0 +1,35 @@
+.footerContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+}
+.footerContainer div{
+    margin: 1em;
+}
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.footerLinks{
+    font-size: .9rem;
+}
+.footerGetInTouch span{
+    margin:.25em;
+}
+.footerGetInTouch{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+@media screen and (max-width:500px) {
+    .footerContainer{
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+}

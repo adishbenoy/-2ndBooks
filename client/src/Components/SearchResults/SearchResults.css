@@ -1,0 +1,71 @@
+.searchAndFilterContainer{
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.filterContainer{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 250px;
+
+}
+.filterGroups{
+    background-color: var(--black-color);
+    width: inherit;
+
+}
+.filterHeading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em .5em;
+}
+.filterInput{
+    width: 90%;
+    margin-left: 1.5% !important;
+    padding: .5em;
+    margin: 1em 0;
+}
+.filterGroups h5{
+    color: var(--primary-color);
+}
+.filterApplyButton{
+    background-color: var(--black-color);
+    padding: .5em 2em;
+    margin: 1em 0;
+    border:none;
+    border-radius: .25em;
+    color: var(--primary-color);
+    font-weight: bold;
+
+}
+.searchResultsContainer{
+    flex: 1;
+    display: flex;
+    gap: 1em !important;
+    flex-wrap: wrap;
+    max-width: 90vw;
+    justify-content: center;
+}
+@media screen and (max-width: 700px) {
+    .searchAndFilterContainer {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      align-items: center;
+      gap: 1em;
+    }
+  
+    .searchAndFilterContainer .filterContainer {
+      width: 100%;
+    }
+  
+    .searchAndFilterContainer .searchResultsContainer {
+      width: 100%;
+    }
+  }
