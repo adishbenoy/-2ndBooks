@@ -1,0 +1,85 @@
+.cardContainer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cardCourseCode {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    background-color: var(--black-color);
+    color: var(--primary-color);
+    border-radius: 0.25em;
+    padding: 0.25em;
+    font-weight: bold;
+  }
+  
+  .card {
+    height: 20em;
+    width: 11.75em;
+    display: grid;
+    grid-template-areas:
+      "cardImage"
+      "cardContent";
+    grid-template-rows: 60% 40%;
+    border-radius: 0.5em;
+    overflow: hidden;
+  }
+  
+  .cardImage {
+    width: 100%;
+    object-position: top;
+    object-fit: cover;
+    grid-area: cardImage;
+  }
+  .cardContent :is(.cardCourse,.cardSem,.cardTitle,.cardPrice,.cardBuy){
+    margin: .25em;
+  }
+  .cardContent {
+    display: grid;
+    background-color: var(--secondary-color);
+    grid-template-areas:
+      "cardSem cardCourse"
+      "cardTitle cardTitle"
+      "cardPrice cardBuy"
+      "cardCart cardCart";
+  }
+  
+  .cardSem {
+    grid-area: cardSem;
+    font-weight: bold;
+  }
+  
+  .cardCourse {
+    grid-area: cardCourse;
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .cardTitle {
+    grid-area: cardTitle;
+  }
+  
+  .cardPrice {
+    grid-area: cardPrice;
+    font-weight: bold;
+  }
+  
+  .cardBuy {
+    grid-area: cardBuy;
+    border: none;
+    background-color: var(--black-color);
+    color: var(--primary-color);
+    border-radius: 0.5em;
+    font-weight: bold;
+  }
+  
+  .cardCart {
+    grid-area: cardCart;
+    background-color: var(--black-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 0.5em;
+    font-weight: bold;
+  }
+  
